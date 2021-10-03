@@ -70,3 +70,10 @@ var number=function(array){
 function solution(str, ending){
     return str.indexOf(ending, str.length - ending.length) !== -1;
 }
+
+/* This time no story, no theory. The examples below show you how to write function accum:*/
+
+function accum(s) {
+    return [...s].map((char, index) => (char.toUpperCase() + char.toLowerCase().repeat(index))).join("-")
+}
+
