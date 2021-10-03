@@ -83,3 +83,14 @@ function angle(n) {
         return 0;
     return (n - 2) * 180;
 }
+
+///
+
+
+function minMax(arr){
+
+    let s=arr.sort((a,b)=>a-b)
+
+    return [s[0],s[s.length-1]]; // fix me!
+
+}
