@@ -76,4 +76,10 @@ function solution(str, ending){
 function accum(s) {
     return [...s].map((char, index) => (char.toUpperCase() + char.toLowerCase().repeat(index))).join("-")
 }
+/* Find the total sum of internal angles (in degrees) in an n-sided simple polygon. N will be greater than 2.:*/
 
+function angle(n) {
+    if (n < 3)
+        return 0;
+    return (n - 2) * 180;
+}
