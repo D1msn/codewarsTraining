@@ -38,3 +38,25 @@ function removeUrlAnchor(url) {
 
     return index === -1 ? url : url.slice(0, index);
 }
+
+/* You get any card as an argument. Your task is to return a suit of this card.
+ */
+function defineSuit(card) {
+    a = card[card.length - 1];
+    if(a === "♣"){
+        return 'clubs'
+    } else if ( a === "♦"){
+        return 'diamonds'
+    }else if ( a === "♥"){
+        return 'hearts'
+    }else if ( a === "♠"){
+        return 'spades'
+    }
+}
+
+/* Create a function that converts US dollars (USD) to Chinese Yuan (CNY) . The input is the amount of USD as an integer, and the output should be a string that states the amount of Yuan followed by 'Chinese Yuan'
+ */
+function usdcny(usd) {
+    let c = usd*6.75
+    return `${c.toFixed(2)} Chinese Yuan`
+}
