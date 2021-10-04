@@ -71,3 +71,16 @@ function check(a, x) {
         }
     }return false;
 }
+/* Given an array of integers your solution should find the smallest integer. */
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        let min = args[0];
+        args.forEach(item =>{
+            if(item < min){
+                min = item;
+            }
+        })
+
+        return min;
+    }
+}
