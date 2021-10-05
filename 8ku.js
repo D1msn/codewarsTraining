@@ -94,3 +94,17 @@ function minMax(arr){
     return [s[0],s[s.length-1]]; // fix me!
 
 }
+
+/// Write a function which converts the input string to uppercase.
+
+const makeUpperCase = (str) => str.toUpperCase();
+
+/// Write a function which converts the input string to uppercase.
+
+function between(a, b) {
+    let result = [];
+    for(let i = a; i <= b; i++){
+        result.push(i)
+    }
+    return result;
+}
