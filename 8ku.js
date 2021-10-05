@@ -108,3 +108,49 @@ function between(a, b) {
     }
     return result;
 }
+
+/// Your function takes two arguments:
+//
+// current father's age (years)
+// current age of his son (years)
+// Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+const twiceAsOld = (dadYearsOld, sonYearsOld) => sonYearsOld * 2 > dadYearsOld ? sonYearsOld * 2 - dadYearsOld : dadYearsOld - sonYearsOld * 2;
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    let dubleYears = sonYearsOld * 2;
+    if(dubleYears > dadYearsOld){
+        return dubleYears - dadYearsOld;
+    }
+    return dadYearsOld - dubleYears;
+    // your code here
+}
+
+/*
+Implement a function named generateRange(min, max, step),
+ which takes three arguments and generates a range of integers from min to max, with the step.
+ The first integer is the minimum value, the second is the maximum of the range and the third is the step. (min < max)
+ */
+
+function generateRange(min, max, step){
+    let result = [];
+    for(min; min <= max; (min += step)){
+        result.push(min);
+    }
+    return result;
+}
+
+/*
+Simple, remove the spaces from the string, then return the resultant string.
+ */
+function noSpace(x){
+    let result = "";
+
+    for(let i = 0; i < x.length; i++){
+        if(x[i] != " "){
+            result += x[i]
+        }
+    }
+
+    return result;
+}
