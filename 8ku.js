@@ -154,3 +154,43 @@ function noSpace(x){
 
     return result;
 }
+
+/*
+Complete the solution so that it reverses all of the words within the string passed in.
+ */
+function reverseWords(str){
+    return str.split(" ").reverse().join(" "); // reverse those words
+}
+/*
+Build a function that returns an array of integers from n to 1 where n>0.
+ */
+const reverseSeq = n => {
+    const result = [];
+    for(n; n>0; n--){
+        result.push(n)
+    }
+    return  result;
+};
+/*
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total. Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+ */
+function rentalCarCost(d) {
+    let result = 0;
+
+    for(let i = 0; i < d; i++){
+        result+= 40
+    }
+
+    if(d >= 7){
+        result -= 50;
+    }else if(d >= 3){
+        result -= 20
+    }
+
+    return result
+}/*
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.ff your total.
+ */
+function century(year) {
+    return Math.ceil(year / 100);
+}
